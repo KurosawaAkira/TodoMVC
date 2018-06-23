@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoMVC</title>
+    <link rel="stylesheet" href="TodoMVC.css">
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/119915/47031/5b2a423ff629d909a0d7ad43.css'
+          rel='stylesheet' type='text/css'/>
+    <meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport"/>
+</head>
+<body>
+<div class="todoapp">
+    <div class="header">
+        <span class="todo-count"></span>
+        <h1>todos</h1>
+        <input class="toggle-all" type="checkbox">
+        <input class="new-todo" type="text" placeholder="What to do next?" autofocus>
+    </div>
+
+        <div class="selection">
+            <div class="filters">
+                <div><a class="selected">All</a></div>
+                <div><a class="">Active</a></div>
+                <div><a class="">Completed</a></div>
+                <a class="clear-completed">×</a>
+            </div>
+        </div>
+        <ul class="todo-list"></ul>
+        <!-- List Item -->
+    </div>
+
+<script src="model.js"></script>
+<script src="provider-localStorage.js"></script>
+<script src="TodoMVC.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+</body>
+</html>
